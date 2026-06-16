@@ -8,6 +8,6 @@ divFor.innerHTML += `${i} - Ódio <br>`
 
 //CONTADOR/ACUMULADOR
 const inputNum = document.querySelector('#num')
-const btnNum = ocument.querySelector('#btn-num')
+const btnNum = document.querySelector('#btn-num')
 const divContAcum = document.querySelector('#div-cont-acum')
 
