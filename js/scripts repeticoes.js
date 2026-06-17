@@ -23,4 +23,10 @@ btnNum.addEventListener('click', (evt)=>{
     divContAcum.innerHTML = `TOTAL DE NÚMERO DIGITADO É: ${CONT} <br} A SOMA DOS NÚMEROS É: {acum}`
 
     inputNum.value = ''
-})
+    })
+
+    //CONTROLADO FOR
+    const inputFrase = document.querySelector('frase')
+    const inputNumRepeticao = document.querySelector('#num-repeticao')
+    const bntFrase = document.querySelector('#btn-frase')
+    const divFrase= document.querySelector('#div-frase')
