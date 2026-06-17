@@ -46,7 +46,7 @@ btnNum.addEventListener('click', (evt) => {
 
     const divArray = document.querySelector('#div-array')
 
-    //divArray.innerHTML = presentes [5]
+    //divArray.innerHTML = presentes [6]
 
     for(i = 0;i < 5;i++){
         divArray.innerHTML += `${presentes[i]} <br>`
@@ -66,3 +66,18 @@ for (let elemento of presentes){
     divForOf.innerHTML += `${elemento} <br>`
 }
 
+//FOREACH
+const divForEach = document.querySelector('div-foreach')
+
+presentes.forEach((elemento, posicao)=>{
+    divForEach.innerHTML += `${posicso + 1} - ${elemento}<br>`
+})
+
+//COLEÇÃO DE OBJETOS LITERAIS - ARRAY
+const pessoas = [
+    {nome: 'Maria Flor', idade: 25, renda:8500},
+    {nome: 'Joerdson Souza', idade: 75, renda:5000},
+    {nome: 'Taoca', idade: 28, renda:500},
+    {nome: 'Chicó', idade: 36, renda:100},
+    {nome: 'João Grilo', idade: 25, renda:8500}
+]
