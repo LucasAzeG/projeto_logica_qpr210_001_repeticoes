@@ -23,6 +23,7 @@ btnNum.addEventListener('click', (evt)=>{
     divContAcum.innerHTML = `TOTAL DE NÚMERO DIGITADO É: ${CONT} <br} A SOMA DOS NÚMEROS É: {acum}`
 
     inputNum.value = ''
+
     })
 
     //CONTROLADO FOR
@@ -30,3 +31,13 @@ btnNum.addEventListener('click', (evt)=>{
     const inputNumRepeticao = document.querySelector('#num-repeticao')
     const bntFrase = document.querySelector('#btn-frase')
     const divFrase= document.querySelector('#div-frase')
+
+    bntFrase.addEventListener('click', (evt) => {
+        let numRepeti = Number(inputNumRepeticao.value)
+        let frase = inputFrase.value
+
+        for (i = 0;i < numRepeti; i++){
+            divFrase.innerHTML += `${i + 1} - ${frase} <br>`
+        }
+    })
+
