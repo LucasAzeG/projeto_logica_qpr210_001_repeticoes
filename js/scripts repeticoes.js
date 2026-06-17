@@ -15,5 +15,12 @@ let cont = 0
 let acum = 0.0
 
 btnNum.addEventListener('click', (evt)=>{
-    let numDigitado = Number(inputNum.va)
+    let numDigitado = Number(inputNum.value)
+
+    cont++
+    acum += numDigitado
+
+    divContAcum.innerHTML = `TOTAL DE NÚMERO DIGITADO É: ${CONT} <br} A SOMA DOS NÚMEROS É: {acum}`
+
+    inputNum.value = ''
 })
