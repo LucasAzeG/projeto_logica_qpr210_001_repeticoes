@@ -41,4 +41,27 @@ btnNum.addEventListener('click', (evt) => {
         }
     })
 
+    //COLEÇÃO DE DADOS -ARRAY
+    const presentes = ['Mochila', 'Celular', 'Camisa do Tesla', 'Doleira', 'Sapato' ]
+
+    const divArray = document.querySelector('#div-array')
+
+    //divArray.innerHTML = presentes [5]
+
+    for(i = 0;i < 5;i++){
+        divArray.innerHTML += `${presentes[i]} <br>`
+    }
+
 //FOR IN
+const divForIn = document.querySelector('#div-forin')
+
+for(let posicao in presentes){
+    divForIn.innerHTML += `${presentes[posicao]}<br>`
+}
+
+//FOR OF
+const divForOf = document.querySelector('div-fotof')
+
+for (let elemento of presentes){
+    divForOf.innerHTML += `${elemento} <br>`
+}
