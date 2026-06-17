@@ -65,3 +65,4 @@ const divForOf = document.querySelector('div-fotof')
 for (let elemento of presentes){
     divForOf.innerHTML += `${elemento} <br>`
 }
+
