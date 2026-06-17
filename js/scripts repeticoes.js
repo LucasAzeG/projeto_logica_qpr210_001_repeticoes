@@ -60,7 +60,7 @@ for(let posicao in presentes){
 }
 
 //FOR OF
-const divForOf = document.querySelector('div-fotof')
+const divForOf = document.querySelector('div-forof')
 
 for (let elemento of presentes){
     divForOf.innerHTML += `${elemento} <br>`
